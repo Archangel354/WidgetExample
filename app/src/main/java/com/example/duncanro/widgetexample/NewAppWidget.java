@@ -31,6 +31,8 @@ public class NewAppWidget extends AppWidgetProvider {
 
         // Update the widgets via the service
         UpdateWidgetService.startActionUpdateWidget(context);
+
+
     }
 
 
