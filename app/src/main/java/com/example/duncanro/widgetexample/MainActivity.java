@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this,UpdateWidgetService.class);
-        intent.putExtra(EXTRA_RECIPENAME, widgetText);
-        startService(intent);
+//        Intent intent = new Intent(this,UpdateWidgetService.class);
+//        intent.putExtra(EXTRA_RECIPENAME, widgetText);
+//        startService(intent);
     }
 }

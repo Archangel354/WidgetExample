@@ -15,11 +15,8 @@ import java.util.Random;
 import static com.example.duncanro.widgetexample.MainActivity.EXTRA_RECIPENAME;
 
 public class UpdateWidgetService extends Service {
-    private static final String LOG = "de.vogella.android.widget.example";
+    private static final String LOG = "com.example.duncanro.widgetexample";
     public static final String ACTION_UPDATE_PLANT_WIDGETS = "com.example.duncanro.widgetexample.action.update_plant_widgets";
-
-
-
 
     @Override
     public void onStart(Intent intent, int startId) {
@@ -28,8 +25,6 @@ public class UpdateWidgetService extends Service {
 
         int[] allWidgetIds = intent
                 .getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS);
-
-        String recipename = intent.getStringExtra(EXTRA_RECIPENAME);
 
 //      ComponentName thisWidget = new ComponentName(getApplicationContext(),
 //              MyWidgetProvider.class);
@@ -70,6 +65,9 @@ public class UpdateWidgetService extends Service {
     public IBinder onBind(Intent intent) {
         return null;
     }
+
+
+
 
     /**
      * Starts this service to perform UpdatePlantWidgets action with the given parameters. If
